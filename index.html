@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanes Code Quiz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="highscore.html">Code Quiz High Scores</a>
+        <aside id="countdownEl">60</aside>
+      </nav>
+
+      <!-- start -->
+
+      <div class="card" id="startScreen">
+        <div class="card-header">
+          <div>I Want to Play a Game</div>
+        </div>
+        <div class="card-body">
+          <blockquote>
+            <p>
+              There's only one correct answer to each question. If you answer
+              correctly, you'll win. If you answer incorrectly, you'll sacrifice
+              what you love most - <strong>time</strong>.
+            </p>
+            <button id='startBtn' type="button" class="btn btn-primary btn-lg btn-block">
+              Start Quiz
+            </button>
+          </blockquote>
+        </div>
+      </div>
+    
+      <!-- q&a -->
+
+      <div id='q1' class="hidethis card">
+        <div class="card-header">
+          <h2>How do you write 'Hello World' in an alert box?</h2>
+        </div>
+        <div class="card-body">
+          <section>
+            <div>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">msgBox('Hello World')</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">alertBox('Hello World')</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">msg('Hello World')</button>
+              <button type="button" class="true btn btn-primary btn-lg btn-block">alert('Hello World')</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='q2' class="hidethis card">
+        <div class="card-header">
+          <h2>How do you create a function in JavaScript?</h2>
+        </div>
+        <div class="card-body">
+          <section>
+            <div>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">function = myFunction(</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">funtion:myFunction()</button>
+              <button type="button" class="true btn btn-primary btn-lg btn-block">function myFunction()</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">cut off your hand</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='q3' class="hidethis card">
+        <div class="card-header">
+          <h2>How do you call a function named 'myFunction'?</h2>
+        </div>
+        <div class="card-body">
+          <section>
+            <div>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">you find it in a pool of dirty needles</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">call myFunction()</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">call function myFunction()</button>
+              <button type="button" class="true btn btn-primary btn-lg btn-block">myFunction()</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='q4' class="hidethis card">
+        <div class="card-header">
+          <h2>How can you add a comment in a JavaScript?</h2>
+        </div>
+        <div class="card-body">
+          <section>
+            <div>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">'This is a comment</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">you write it in cement</button>
+              <button type="button" class="true btn btn-primary btn-lg btn-block">//This is a comment</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">!this is a comment!</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='q5' class="hidethis card">
+        <div class="card-header">
+          <h2>What is the correct way to write a JavaScript array?</h2>
+        </div>
+        <div class="card-body">
+          <section>
+            <div>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">var colors = (1:'red',2:'green',3:'blue')"</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">var colors = 'red', 'green','blue'</button>
+              <button type="button" class="true btn btn-primary btn-lg btn-block">var color = ['red','green','blue']</button>
+              <button type="button" class="false btn btn-primary btn-lg btn-block">var colors = 1 = ('red),2=('green'),3=('blue')</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- finished screen -->
+
+      <div id='submitScoreScreen' class="hidethis card">
+        <div class="card-header">
+          <h2>You've Completed the Game. Was it Worth it?</h2>
+        </div>
+        <div class="card-body">
+         <form class="form-group">
+                <label for="new-score">Enter your name: </label>
+                <input type="text" id="userName"> 
+                <button type="button" class="btn btn-primary btn-lg btn-block submitBtn">Submit</button>
+            </form>
+        </div>
+      </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
