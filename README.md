@@ -5,11 +5,13 @@ If this doesn't work, there is a screen shot of the project in the assets folder
 
 # link
 
-
+https://shanerunnels.github.io/shanescodequiz/
 
 # description
 
 To start off, I did not finish this project. I didn't manage my time very well this week, so I ran out. 
+Speaking of time, please wait until the timer is done because I couldn't figure out how to jump to the end
+when the questions have run out. 
 But I do believe that the code that you'll find is clean and at least meets some of the criteria. 
 Like always, even though I did not finish it, I hope you'll appreciate the movie reference in it. 
 
